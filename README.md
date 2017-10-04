@@ -13,7 +13,7 @@ _**THIS IS A WORK IN PROGRESS**_
 * **Step 1.** **[IN PROGRESS]** Processing Bleien Survey Data Images using SEEK.
 * **Step 2.** **[IN PROGRESS]** Visualise processed data to ensure that we are
   dealing with the right type of data.
-* **Step 3.** **[IN PROGRESS]** Train naive Unet on the data taht has been
+* **Step 3.** **[IN PROGRESS]** Train naive Unet on the data that has been
   processed.
 * **Step 4.** **[IN PROGRESS]** Generate more data using HIDE and process with
   SEEK.
