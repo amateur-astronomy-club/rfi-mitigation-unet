@@ -66,3 +66,4 @@ for i in range(96):
 
 
 print ("Done processing. Images saved in current directory.")
+print("It should look something like the ones here : https://imgur.com/a/D7vns")

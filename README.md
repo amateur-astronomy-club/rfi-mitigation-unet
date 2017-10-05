@@ -13,11 +13,11 @@ _**THIS IS A WORK IN PROGRESS**_
 * **Step 1.** **`DONE`** Processing Bleien Survey Data Images using SEEK.
 * **Step 2.** **`DONE`** Visualise processed data to ensure that we are
   dealing with the right type of data.
-* **Step 3.** **[IN PROGRESS]** Train naive Unet on the data that has been
-  processed. Analyse results. Predict. Visualise data.
-* **Step 4.** **`DONE`** Generate more data using HIDE and process with
-  SEEK.
-* **Step 5.** Train on the extended dataset and observe results.
+* **Step 3.** **`DONE`** Generate more data using HIDE and process with
+    SEEK.
+* **Step 4.** **[IN PROGRESS]** Train naive Unet on the data that has been
+  processed.
+* **Step 5.** Analyse results. Predict. Visualise data.
 * **Step 6.** Train using the Keras model.
 
 
