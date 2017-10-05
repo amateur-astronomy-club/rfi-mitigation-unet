@@ -10,18 +10,17 @@ _**THIS IS A WORK IN PROGRESS**_
 
 ## Roadmap
 
-* **Step 1.** **[IN PROGRESS]** Processing Bleien Survey Data Images using SEEK.
-* **Step 2.** **[IN PROGRESS]** Visualise processed data to ensure that we are
+* **Step 1.** **`DONE`** Processing Bleien Survey Data Images using SEEK.
+* **Step 2.** **`DONE`** Visualise processed data to ensure that we are
   dealing with the right type of data.
 * **Step 3.** **[IN PROGRESS]** Train naive Unet on the data that has been
-  processed.
-* **Step 4.** **[IN PROGRESS]** Generate more data using HIDE and process with
+  processed. Analyse results. Predict. Visualise data.
+* **Step 4.** **`DONE`** Generate more data using HIDE and process with
   SEEK.
 * **Step 5.** Train on the extended dataset and observe results.
 * **Step 6.** Train using the Keras model.
 
 
 ## References
-* [RFI  Example](https://github.com/jakeret/tf_unet/blob/master/demo/demo_radio_data.ipynb)
-* [HIDE &  SEEK](http://www.cosmology.ethz.ch/research/software-lab/hide---seek.html)
-
+* [RFI Example](https://github.com/jakeret/tf_unet/blob/master/demo/demo_radio_data.ipynb)
+* [HIDE & SEEK](http://www.cosmology.ethz.ch/research/software-lab/hide---seek.html)
