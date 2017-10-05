@@ -17,7 +17,7 @@ _**THIS IS A WORK IN PROGRESS**_
     SEEK.
 * **Step 4.** **[IN PROGRESS]** Train naive Unet on the data that has been
   processed.
-* **Step 5.** Analyse results. Predict. Visualise data.
+* **Step 5.** **`NEXT STEP`** Analyse results. Predict. Visualise data.
 * **Step 6.** Train using the Keras model.
 
 
