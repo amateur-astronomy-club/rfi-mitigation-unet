@@ -23,11 +23,11 @@ _**THIS IS A WORK IN PROGRESS**_
 ## Domentation in Ipynb and domain understanding
 * **[IN PROGRESS]** Understanding how HIDE works. `[Sneha, Rahul]`
 * **[IN PROGRESS]** Understanding Unet. `[Aditi, Akhilesh]`
-* **[IN PROGRESS]** Understanding SEEK. `[Ayush]`
+* **[IN PROGRESS]** Understanding SEEK. `[Ayush, Ashwin]`
 * **[IN PROGRESS]** Documenting working of SEEK and visualisation of processed data `[Ayush]`
 * **[IN PROGRESS]** Documenting working of HIDE and data generation `[Rahul]`
-* **[IN PROGRESS]** Documenting RFI, problem statement, Bleien and the Survery Data `[Ashwin]`
-* **[IN PROGRESS]** Documenting training of Unet `[Aditi, Ashwin]`
+* **[IN PROGRESS]** Documenting RFI, problem statement, Bleien and the Survery Data `[Ashwin, Akhilesh]`
+* **[IN PROGRESS]** Documenting training of Unet `[Aditi, Akhilesh]`
 * **[IN PROGRESS]** Documenting approaches tried, parameters changes, results obtained.
 
 ## References
