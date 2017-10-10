@@ -1,7 +1,19 @@
+"""
+    Name: Aditi
+    Date: 5/10/2017
+
+    Source : https://github.com/jakeret/tf_unet/blob/master/demo/demo_radio_data.ipynb
+    Training the processed data using tf_unet
+
+    Make sure you run process_data.py before you run this file.
+
+
+"""
+
 from scripts.radio_util import DataProvider
 from tf_unet import unet
 import glob
-files = glob.glob('/home/aditi/bgs_example_data/seek_cache/*')
+files = glob.glob('./bgs_example_data/seek_cache/*')
 data_provider = DataProvider(600, files)
 
 net = unet.Unet(channels=data_provider.channels, 

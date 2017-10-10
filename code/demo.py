@@ -1,5 +1,5 @@
 """
-    Name: Kaushik S Kalmady
+    Name: Kaushik S Kalmady, Ayush Kumar, Rahul Sankar, Aditi, Akhilesh
     Date: 8/10/2017
 
     Demo of RFI mitigation using UNet
