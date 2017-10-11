@@ -59,7 +59,7 @@ for i in x_test:
     prediction = net.predict(path,i)
     ax[0].imshow(i[0,...,0], aspect="auto")
     ax[1].imshow(y_test[j,...,1], aspect="auto")
-    ax[2].imshow(prediction[0,...,1], aspect="auto")
+    ax[2].imshow(prediction[0,...,1], aspect="auto",cmap="gray")
 
     #Saves The Images in the current directory.
     fig.savefig("pred"+str(j)+".png")
