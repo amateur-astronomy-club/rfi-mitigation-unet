@@ -1,5 +1,5 @@
 """
-    Name: Kaushik S Kalmady, Ayush Kumar, Rahul Sankar, Aditi, Akhilesh
+    Name: Kaushik S Kalmady
     Date: 8/10/2017
 
     Demo of RFI mitigation using UNet
@@ -36,21 +36,21 @@ def load_data():
 
     # You can use two dataproviders for each path
     # Define Bleien data files path
-    bleien_path = ""
-    hide_path = ""
+    bleien_path = "./bgs_example_data/2016/03/21"
+    hide_path = "./bgs_generated_data/2016/03/21"
 
     # Load data file names
     bleien_files = glob.glob(bleien_path)
     hide_files = glob.glob(hide_path)
 
     # Define data_providers
-    bleien_data_provider =
-    hide_data_provider =
+    bleien_data_provider = DataProvider(600, bleien_files)
+    hide_data_provider = DataProvider(600, hide_files)
 
     # Load data using two dataproviders
     # _ is used for variables we don't want
-    bleien_data, _ =
-    hide_data, _ =
+    bleien_data, _ = bleien_data_provider(len(bleien_files))
+    hide_data, _ =  hide_data_provider(len(hide_files))
 
     return bleien_data, hide_data
 
@@ -66,9 +66,11 @@ def display_side_by_side(first, second):
 
     """
 
-    fig, ax =
+    fig, ax = plt.subplots(1,2, figsize=(12,4))
 
     # plot first and second data as in visual.py
+    ax[0].imshow(first[0, ..., 0], aspect="auto")
+    ax[1].imshow(second[0, ..., 1], aspect="auto")
 
     plt.show()
 
@@ -81,19 +83,33 @@ def load_and_predict(data):
     """
 
     # Define Unet
-    unet =
+    unet = unet.Unet(channels=data_provider.channels,
+                n_class=data_provider.n_class,
+                layers=3,
+                features_root=64,
+                cost_kwargs=dict(regularizer=0.001),
+                )
 
 
     # Path to cpkt file of trained Unet
-    path = ""
+    path = "./unet_trained_bgs_example_data/model.cpkt"
 
     # Predict using Unet
-    unet_predict =
+    data_provider = DataProvider(600, data)
+    x_test, y_test = data_provider(1)
+    unet_predict = unet.predict(path, data)
+
+    fig, ax = plt.subplots(1,3, figsize=(12,4))
+    ax[0].imshow(x_test[0,...,0], aspect="auto")
+    ax[1].imshow(y_test[j,...,1], aspect="auto")
+    ax[2].imshow(unet_predict[0,...,1], aspect="auto",cmap="gray")
+    fig.savefig("pred"+str(1)+".png")
 
     # Predict using SEEK's sum_threshold
-    seek_predict =
 
-    return unet_predict, seek_predict
+    with h5py.File("data", "r") as fp:
+        timeord = fp["P/Phase1"].value
+
 
 
 if __name__ == "__main__":
@@ -106,7 +122,7 @@ if __name__ == "__main__":
     display_side_by_side(bleien_data, hide_data)
 
     # Make predicitons on the hide data
-    unet_predict, seek_predict = load_and_predict(hide_data)
+    load_and_predict(hide_data)
 
     # Display results
-    display_side_by_side(unet_predict, seek_predict)
+    #display_side_by_side(unet_predict, seek_predict)
