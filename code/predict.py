@@ -58,7 +58,7 @@ for i in x_test:
     # Couldn't find a way to not have to load all the parameters everytime.
     prediction = net.predict(path,i)
     ax[0].imshow(i[0,...,0], aspect="auto")
-    ax[1].imshow(y_test[0,...,1], aspect="auto")
+    ax[1].imshow(y_test[j,...,1], aspect="auto")
     ax[2].imshow(prediction[0,...,1], aspect="auto")
 
     #Saves The Images in the current directory.
