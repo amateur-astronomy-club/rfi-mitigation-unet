@@ -19,7 +19,7 @@ _**THIS IS A WORK IN PROGRESS**_
   processed.
 * **Step 5.** **`DONE`** Analyse results. Predict. Visualise data.
 * **Step 6.** **`POSTPONED TO 2018`** Train using the Keras model.
-* **Step 7.** **`DONE`*** Demo code completion
+* **Step 7.** **`DONE`** Demo code completion
 
 ## Domentation in Ipynb and domain understanding
 * **`DONE`** Understanding how HIDE works. `[Sneha, Rahul]`
