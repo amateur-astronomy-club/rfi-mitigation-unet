@@ -17,8 +17,8 @@ _**THIS IS A WORK IN PROGRESS**_
     SEEK.
 * **Step 4.** **`DONE`** Train naive Unet on the data that has been
   processed.
-* **Step 5.** **`DONE`*** Analyse results. Predict. Visualise data.
-* **Step 6.** **`POSTPONED TO 2018`**Train using the Keras model.
+* **Step 5.** **`DONE`** Analyse results. Predict. Visualise data.
+* **Step 6.** **`POSTPONED TO 2018`** Train using the Keras model.
 * **Step 7.** **`DONE`*** Demo code completion
 
 ## Domentation in Ipynb and domain understanding
