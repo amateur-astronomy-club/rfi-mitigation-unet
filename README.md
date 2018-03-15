@@ -21,7 +21,7 @@ _**THIS IS A WORK IN PROGRESS**_
 * **Step 6.** **`POSTPONED TO 2018`** Train using the Keras model.
 * **Step 7.** **`DONE`** Demo code completion
 
-## Domentation in Ipynb and domain understanding
+## Documentation and domain understanding
 * **`DONE`** Understanding how HIDE works. `[Sneha, Rahul]`
 * **`DONE`** Understanding Unet. `[Aditi, Akhilesh]`
 * **`DONE`** Understanding SEEK. `[Ayush, Ashwin]`
